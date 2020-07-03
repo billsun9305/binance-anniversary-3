@@ -1,0 +1,102 @@
+#mainNav{
+	height: 80px;
+	width: 100%;
+}
+@media (min-width:1900px){
+	#mainNav{
+		height: 160px;
+	}
+}
+.navtop{
+	background-color: rgba(0,0,0,0);
+	-moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+.navscrolled{
+	background-color: black;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+.nav-link {
+	color: white !important;
+	text-align: center;
+	margin: auto 5px;
+}
+
+.nav-link-btn {
+	color: #333333 !important;
+	background-color: #F0B90B ;
+	border-radius: 4px;
+}
+
+.navbar-brand{
+	color: white;
+}
+.nav-item{
+	display: inline-block;
+}
+.nav_logo{
+	height: 35px;
+}
+nav > .container{
+	width: 100%;
+	padding: 0px 5%;
+	max-width: 5000px;
+	
+}
+/*hamburger color*/
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+	background-color: #FFFFFF;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+	background-color: #FFFFFF;
+}
+@media (max-width: 992px){
+	.nav_logo{
+		height: 18px;
+	}
+	.ml-auto, .mx-auto{
+		left: 0px;
+		margin-left: 0px !important;
+		width: 100%;
+		position: fixed;
+		top: 79px;
+		background-color: rgb(0,0,0);
+		padding: 5% 5%;
+		
+		opacity: 1;
+		-moz-transition:  opacity 0.4s ease;
+	    -ms-transition:  opacity 0.4s ease;
+	    -o-transition:  opacity 0.4s ease;
+	    -webkit-transition:  opacity 0.4s ease;
+	    transition:  opacity 0.4s ease;
+		
+		/*margin-top: 200px;*/
+	}
+	::-webkit-scrollbar {
+	    display: none;
+	}
+	.trans{
+		opacity: 0 !important;
+		/*height: 0px !important;*/
+		-moz-transition:  opacity 0.4s ease;
+	    -ms-transition:  opacity 0.4s ease;
+	    -o-transition:  opacity 0.4s ease;
+	    -webkit-transition:  opacity 0.4s ease;
+	    transition: opacity 0.4s ease;
+	}
+	.navbar-collapse.collapse{
+		opacity: 1;
+	}
+	.navbar-collapse.collapse:not(.show){
+		display: block;
+		opacity: 0;
+		transition-delay: 0.4s;
+	}
+}
