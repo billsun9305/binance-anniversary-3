@@ -19,9 +19,14 @@
 		font-size: 9px;
 		line-height: 13px;
 	}
+	#aboutus {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
 	.text-small{
-		font-size: 13px;
-		line-height: 20px;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.text-title{
 		font-size: 24px;
@@ -153,8 +158,8 @@
 		line-height: 12px;
 	}
 	.text-small{
-		font-size: 13px;
-		line-height: 16px;
+		font-size: 16px;
+		line-height: 24px;
 	}
 	.nav-link{
 		font-size: 18px;
@@ -314,9 +319,33 @@
 		font-size: 12px;
 		line-height: 16px;
 	}
+
+	.text-content .name{
+		font-size: 16px;
+		line-height: 16px;
+	}
+
 	.text-small{
-		font-size: 9px;
-		line-height: 12px;
+		font-size: 16px;
+		line-height: 24px;
+	
+	}
+
+	.text-content-sm{
+		font-size: 20px;
+		line-height: 22px;
+		margin-top: 2vh !important;
+	}
+
+	/* #aboutus .text-content{
+		font-size: 16px !important;
+		line-height: 24px;
+	} */
+
+	.award-name{
+		font-size: 20px;
+		line-height: 22px;
+		height: 5vh !important;
 	}
 	.nav-link{
 		font-size: 16px;
@@ -377,125 +406,118 @@
 	}
 }
 @media (max-width:390px){
-	.text-title{
-		font-size: 14px;
-		line-height: 20px;
+	header{
+		height: 400px;
+		overflow: hidden;
+		background-position: 30%
 	}
-	.text-title-big{
-		font-size: 20px;
-		line-height: 23px;
+	header > .container{
+		padding-left: 13%;
 	}
-	.text-title-custom{
-		font-size: 12px;
-	}
-	.text-title-2020{
-		font-size: 28px;
-	}
-	.text-content{
-		font-size: 9px;
-		line-height: 10px;
-	}
-	.nav-link{
-		font-size: 14px;
-	}
-	.content-icon{
-		height: 12px;
-		line-height: 20px;
-	}
-	.speaker-name{
-		font-size: 13px;
-	}
-	#mail_icon{
-		width: 12px;
-		line-height: 20px;
-	}
-	.live-btn{
-		width: 30px;
-		margin-bottom: 4px;
-		border-radius: 11px;
-		color: black;
-		padding:2px 5px;
-		font-size: 8px;
-	}
-	.video-footer{
-		padding-right: 8px;
-		height: 16px;
-		line-height: 16px;
-		font-size: 7px;
-	}
-	#about-top .text-content{
-		height: 36px;
-	}
-}
-@media (min-width:1600px){
-  	.text-title-big{
-		font-family: "IBM Plex Sans";
-		font-style: normal;
-		font-weight: bold;
-		font-size: 50px;
-		line-height: 60px;
-	}
-	.text-title-custom{
-		font-size: 50px;
-	}
-	.text-title-2020{
-		font-size: 65px;
+	.custom_btn{
+		font-size: 16px;
+		line-height: 40px;
 	}
 	.text-mini{
+		font-size: 6px;
+		line-height: 9px;
+	}
+	.text-title{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.text-title-custom{
+		font-size: 16px;
+	}
+	.text-title-2020{
+		font-size: 32px;
+	}
+	.text-title-big{
+		font-size: 23px;
+		line-height: 26px;
+	}
+	.text-content{
 		font-size: 12px;
 		line-height: 16px;
 	}
 	.text-small{
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 24px;
+	
 	}
-	.text-content{
-		font-family: "IBM Plex Sans";
-		font-style: normal;
-		font-weight: normal;
-		font-size: 25px;
-		line-height: 35px;
-		width: 100%;
+
+	.text-content-sm{
+		font-size: 20px;
+		line-height: 22px;
+		margin-top: 2vh !important;
 	}
-	.text-title{
-		font-family: IBM Plex Sans;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 40px;
-		line-height: 45px;
-		width: 100%;
-		text-align: center;
-		color: #333333;
+
+	/* #aboutus .text-content{
+		font-size: 16px !important;
+		line-height: 24px;
+	} */
+
+	.award-name{
+		font-size: 20px;
+		line-height: 22px;
+		height: 5vh !important;
 	}
-	.diamond{
-		display: inline-block;
-		vertical-align: top;
-		width: 20px;
-		height: 20px;
-		background-color: #F0B90B;
-		transform: rotate(45deg);
+	.nav-link{
+		font-size: 16px;
+		line-height: 20px;
 	}
 	.content-icon{
-		vertical-align: middle;
-		height: 29px;
-		margin-right: 10px;
-		margin-top: 2px;
-		margin-bottom: 8px;
-		line-height: 30px;
+		height: 14px;
+		line-height: 26px;
 	}
 	.speaker-name{
-		color: #333333;
-		font-size: 30px;
+		font-size: 15px;
 	}
 	#mail_icon{
-		width: 30px;
-		margin-left: 10px;
+		width: 14px;
+		line-height: 26px;
 	}
-	#awards_list .award-name{
-		height: 130px;
+	header, #agenda_collapse_original{
+		height: 350px;
+		overflow: hidden;
 	}
-	#awards_list .text-small{
-		height: 150px;
+	.speaker{
+		min-width: 140px;
+		min-height: 197px;
+	}
+	.awards_img{
+		padding-top: 50%;
+	}
+	#about-top{
+		width: 90%;
+	}
+	#about-top .center-div{
+		padding: 0px 0px;
+	}
+	#about-top .text-content{
+		height: 50px;
+	}
+	#agenda_collapse td button{
+		font-size: 13px;
+		line-height: 16px;
+		padding: 2px 5px;
+	}
+	.live-btn{
+		width: 38px;
+		margin-bottom: 5px;
+		border-radius: 13px;
+		color: black;
+		padding:2px 6px;
+		font-size: 10px;
+	}
+	.video-footer{
+		padding-right: 11px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 10px;
+	}
+	.text-content.company{
+		font-size: 9px;
 	}
 }
 @media (min-width:1900px){

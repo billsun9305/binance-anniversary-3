@@ -2,7 +2,7 @@ var original_height=$("#agenda_collapse_original").height();
 $("#view_agenda_btn").click(function(){
 	$("#view_agenda_btn").css('visibility', 'hidden');
 	$("#agenda_collapse").animate({
-		marginTop: -Math.floor(original_height*(1/3)),
+		marginTop: -Math.floor(original_height*(1/5)),
 		opacity: 1
 	}, 500, 'easeInOutCubic' );
 	
