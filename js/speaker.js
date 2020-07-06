@@ -199,7 +199,7 @@ $("#view_more_speaker_btn2").click(function(){
 		}, 20*(speaker_div_list.length - speaker_show_num), 'easeInOutCubic' );
 		$("#view_more_speaker_btn2").addClass("show_less");
 		$("#view_more_speaker_btn2").text("收起");
-		$("#view_more_speaker_btn2").css("background-color","black");
+		
 	}
 });
 
