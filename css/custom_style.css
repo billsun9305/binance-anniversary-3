@@ -558,6 +558,15 @@ a:link, a:visited {
 	margin-bottom: 4vw !important;
 }
 
+#view_more_speaker_btn2{
+	padding: 0px 8vw;
+	background-color: #F0B90B;
+	margin-top: 0px;
+	display: none;
+	margin-top: 2vw !important;
+	margin-bottom: 4vw !important;
+}
+
 #agenda_collapse_original,#awards_collapse_original{
 	position: relative;
 	width: 100%;
@@ -571,7 +580,7 @@ a:link, a:visited {
 #awards_collapse_original{
 	position: relative;
 	background-color: #CBCBCB;
-	background-image: url(https://public.bnbstatic.com/static/binance-third-anniversary/img/Awards-bg.jpg../img/Awards-bg.jpg);;
+	background-image: url(https://public.bnbstatic.com/static/binance-third-anniversary/img/Awards-bg.jpg);;
 }
 #agenda_collapse_original .overlay, #awards_collapse_original .overlay{
 	position: absolute;

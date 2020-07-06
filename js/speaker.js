@@ -59,6 +59,7 @@ init_show(speaker_show_num);
 if (speaker_div_list.length>=speaker_show_num){
 	// 超過15個的話，顯示view more btn
 	$("#view_more_speaker_btn").show();
+	$("#view_more_speaker_btn2").show();
 }
 
 // 一些特殊設定，為了讓 height: auto的物件高度調整能有動畫（smoothly）
@@ -146,6 +147,59 @@ $("#view_more_speaker_btn").click(function(){
 		}, 20*(speaker_div_list.length - speaker_show_num), 'easeInOutCubic' );
 		$("#view_more_speaker_btn").addClass("show_less");
 		$("#view_more_speaker_btn").text("View less");
+	}
+});
+
+$("#view_more_speaker_btn2").click(function(){
+	if ($("#view_more_speaker_btn2").hasClass("show_less")) {//show less
+		speaker_div_list.slice(speaker_show_num).reverse().some(function(speaker_div,index) {
+			setTimeout(function(){
+				speaker_div.animate({
+					opacity: "0"
+				}, 150);
+			},20*index);
+		}); 
+		$("#to_speaker").trigger( "click" );
+		$("#speaker_list").animate({
+			height: speaker_list_start_height
+		}, 20*(speaker_div_list.length - speaker_show_num), 'easeInOutCubic' );
+
+        // hide all virtual div
+        setTimeout(function(){
+	        virtual_div_list.some(function(virtual_div,index) {
+				virtual_div.hide();
+			});    
+		},20*(speaker_div_list.length - speaker_show_num));
+		
+		setTimeout(function(){
+	        speaker_div_list.slice(speaker_show_num).some(function(speaker_div,index) {
+			speaker_div.hide();
+		});    
+		},20*(speaker_div_list.length - speaker_show_num + virtual_div_num));
+		
+		$("#view_more_speaker_btn2").removeClass("show_less");
+		$("#view_more_speaker_btn2").text("浏览更多");
+	}
+	else{
+		// display all virtual div
+		virtual_div_list.some(function(virtual_div,index) {
+			virtual_div.show();
+		});    
+	 	speaker_div_list.slice(speaker_show_num).some(function(speaker_div,index) {
+
+	 		speaker_div.show();
+	 		setTimeout(function(){
+				speaker_div.animate({
+					opacity: "1"
+				}, 150);
+			},20*index);
+		});
+		$("#speaker_list").animate({
+			height: $("#speaker_list").get(0).scrollHeight
+		}, 20*(speaker_div_list.length - speaker_show_num), 'easeInOutCubic' );
+		$("#view_more_speaker_btn2").addClass("show_less");
+		$("#view_more_speaker_btn2").text("收起");
+		$("#view_more_speaker_btn2").css("background-color","black");
 	}
 });
 
