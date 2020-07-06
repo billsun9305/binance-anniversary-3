@@ -24,7 +24,7 @@ var code_of_sponsor=['D','G','S','M'];
 for (var i = 0; i < 4; i++) {
 	for (var j = 0; j < num_of_sponsor[i]; j++) {
 	    var img = $('<img>');
-		img.attr('src', "img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
+		img.attr('src', "https://public.bnbstatic.com/static/binance-third-anniversary/img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
 		img.attr('id',code_of_sponsor[i]+String(j));
 		img.appendTo('#sponsor_list_'+code_of_sponsor[i]);
 
