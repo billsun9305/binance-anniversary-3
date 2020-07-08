@@ -28,6 +28,9 @@
 		font-size: 16px;
 		line-height: 24px;
 	}
+
+	
+
 	.text-title{
 		font-size: 24px;
 		line-height: 28px;
@@ -60,6 +63,23 @@
 	#awards_list .text-small{
 		height: 130px;
 	}
+
+	#awards_list .award-height{
+		height: 188px !important;
+	}
+
+	#awards_list .award-height-up{
+		height: 255px !important;
+	}
+
+	#awards_list .award-height-md{
+		height: 175px !important;
+	}
+
+	#awards_list .award-height-dn-up{
+		height: 193px !important;
+	}
+
 	.text-content.company{
 		font-size: 13px;
 		line-height: 13px;
@@ -84,6 +104,18 @@
 	.text-content.company{
 		font-size: 12px;
 		line-height: 12px;
+	}
+	.award-height{
+		height: 194px !important;
+		line-height: 23px !important;
+	}
+	
+}
+
+@media (max-width:980px){
+	.text-small{
+		font-size: 14px;
+		line-height: 22px;
 	}
 
 }
