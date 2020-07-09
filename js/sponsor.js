@@ -6,7 +6,7 @@
 // 完成！！！
 // PS. 原本 img/sponsors/ 內應該就有很多張，請先刪掉，那是我測試用的
 
-var num_of_sponsor=[3,1,1,1]; // 改這裡
+var num_of_sponsor=[3,4,3,29]; // 改這裡
 var code_of_sponsor=['D','G','S','M'];
 
 // 
@@ -24,9 +24,56 @@ var code_of_sponsor=['D','G','S','M'];
 for (var i = 0; i < 4; i++) {
 	for (var j = 0; j < num_of_sponsor[i]; j++) {
 	    var img = $('<img>');
-		img.attr('src', "https://public.bnbstatic.com/static/binance-third-anniversary/img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
+		img.attr('src', "img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
 		img.attr('id',code_of_sponsor[i]+String(j));
 		img.appendTo('#sponsor_list_'+code_of_sponsor[i]);
+		
+		if(i==0){
+			img.attr('style','height:7vw');
+		}
+
+		if(i==1){
+			if(j==0){
+				img.attr('style','height:12vw; padding: 0vw 0vw; margin:-15px; ');
+			}
+			else if(j == 1){
+				img.attr('style','height:5vw');
+			}
+			else{
+				img.attr('style','height:7vw');
+			}
+			
+		}
+
+		if(i==2){
+			if(j==0){
+				img.attr('style','height:5vw; margin-top:5vw');
+			}
+			else if(j==1){
+				img.attr('style','height:12vw; ');
+			}
+			else if(j == 2){
+				img.attr('style','height:12vw');
+			}
+			
+			
+		}
+		
+		
+		
+		if(i==3){
+			if(j == 21 |j == 22 | j ==23){
+				img.attr('style','height:7vw');
+			}
+			if(j==10){
+				img.attr('style','height:7vw; padding: 0vw 0vw; margin:7px; ');
+				// img.attr('class',logo_rwd);
+			}
+		}
+
+
+
+		
 
 	}
 }

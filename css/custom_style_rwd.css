@@ -122,6 +122,10 @@
 
 @media (max-width:900px){
 
+	.logo_rwd{
+		height:10vw;
+	}
+
 	/*for mobile*/
 	#about-conference > .hide_overflow{
 		display: none;
