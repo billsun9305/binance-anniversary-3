@@ -60,6 +60,17 @@ html, body {
 	width: 100%;
 }
 
+.text-content-small{
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	width: 100%;
+}
+
+
+
 .text-content2{
 	font-family: "IBM Plex Sans";
 	font-style: normal;
@@ -696,6 +707,11 @@ a:link, a:visited {
 	width: 0px;
 }
 td > .text-content{
+	width: auto;
+	display: inline-block;
+	margin-left: 28px;
+}
+td > .text-content-small{
 	width: auto;
 	display: inline-block;
 	margin-left: 28px;

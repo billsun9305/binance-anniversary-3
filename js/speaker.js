@@ -24,7 +24,7 @@ function init_show(speaker_show_num){
 	    newDiv.appendTo("#speaker_list");
 	    newDiv.find('.text-content.name').html(speaker_info[0]);
 	    newDiv.find('.text-content.company').html(speaker_info[1]);
-	    newDiv.find('.speaker_bg').css("background-image", "url(https://public.bnbstatic.com/static/binance-third-anniversary/img/speakers/$SPEAKER_NAME.png)".replace("$SPEAKER_NAME",speaker_info[0].replace(/ /g, '%20'))); 
+	    newDiv.find('.speaker_bg').css("background-image", "url(img/speakers/$SPEAKER_NAME.png)".replace("$SPEAKER_NAME",speaker_info[0].replace(/ /g, '%20'))); 
 	    
 	    // newDiv.find('.text-content').html(speaker_info[1]+"<br>"+speaker_info[2]);
 	    // 若超過預設顯示的量，先不顯示

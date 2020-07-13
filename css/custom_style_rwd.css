@@ -15,6 +15,10 @@
 		font-size: 18px;
 		line-height: 25px;
 	}
+	
+	.text-content-small{
+		font-size: 15px;
+	}
 	.text-mini{
 		font-size: 9px;
 		line-height: 13px;
@@ -184,6 +188,10 @@
 	.text-content{
 		font-size: 15px;
 		line-height: 20px;
+	}
+
+	.text-content-small{
+		font-size: 12px;
 	}
 	.text-title{
 		font-size: 20px;
@@ -359,6 +367,11 @@
 	.text-content{
 		font-size: 12px;
 		line-height: 16px;
+	}
+
+	.text-content-small{
+		font-size: 10px;
+		line-height: 15px;
 	}
 
 	.text-content .name{
