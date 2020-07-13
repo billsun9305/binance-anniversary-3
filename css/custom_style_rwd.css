@@ -1,11 +1,11 @@
-@media (max-width:1400px){
+@media (max-width:1600px){
 	.text-content{
 		font-size: 18px;
 		line-height: 25px;
 	}
 	
 	.text-content-small{
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 
@@ -28,7 +28,7 @@
 	}
 	
 	.text-content-small{
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.text-mini{
 		font-size: 9px;
@@ -124,6 +124,9 @@
 		height: 194px !important;
 		line-height: 23px !important;
 	}
+	.text-content-small{
+		font-size: 14px;
+	}
 	
 }
 
@@ -197,12 +200,12 @@
 	}
 	/*text size*/
 	.text-content{
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 20px;
 	}
 
 	.text-content-small{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.text-title{
 		font-size: 20px;

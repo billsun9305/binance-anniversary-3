@@ -6,7 +6,7 @@
 // 完成！！！
 // PS. 原本 img/sponsors/ 內應該就有很多張，請先刪掉，那是我測試用的
 
-var num_of_sponsor=[4,6,3,29]; // 改這裡
+var num_of_sponsor=[4,5,3,31]; // 改這裡
 var code_of_sponsor=['D','G','S','M'];
 
 // 
