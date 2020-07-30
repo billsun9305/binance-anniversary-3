@@ -1,3 +1,4 @@
+
 // 初始化 sponsor 的 script
 // 用之前，先將所有Daimond sponsor logo 照順序以 D0.png, D1.png ... 存放在img/sponsors/ 資料夾中。
 // Gold, Sliver, Media 以此類推 G0.png, S1.png, M0.png 等
@@ -6,7 +7,7 @@
 // 完成！！！
 // PS. 原本 img/sponsors/ 內應該就有很多張，請先刪掉，那是我測試用的
 
-var num_of_sponsor=[4,5,3,31]; // 改這裡
+var num_of_sponsor=[4,5,3,24]; // 改這裡
 var code_of_sponsor=['D','G','S','M'];
 
 // 
@@ -24,7 +25,7 @@ var code_of_sponsor=['D','G','S','M'];
 for (var i = 0; i < 4; i++) {
 	for (var j = 0; j < num_of_sponsor[i]; j++) {
 	    var img = $('<img>');
-		img.attr('src', "img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
+		img.attr('src', "https://public.bnbstatic.com/static/binance-third-anniversary/img/sponsors/"+code_of_sponsor[i]+String(j)+".png");
 		img.attr('id',code_of_sponsor[i]+String(j));
 		img.appendTo('#sponsor_list_'+code_of_sponsor[i]);
 		
@@ -34,10 +35,13 @@ for (var i = 0; i < 4; i++) {
 
 		if(i==1){
 			if(j==0){
-				img.attr('style','height:12vw; padding: 0vw 0vw; margin:-15px; ');
+				img.attr('style','height:12vw; padding: 0vw 0vw; margin:-5px; ');
 			}
 			else if(j == 1){
 				img.attr('style','height:5vw');
+			}
+			else if(j == 2){
+				img.attr('style','height:11vw; margin:0px;');
 			}
 			else{
 				img.attr('style','height:7vw');
@@ -62,7 +66,7 @@ for (var i = 0; i < 4; i++) {
 		
 		
 		if(i==3){
-			if(j == 21 |j == 22 | j ==23){
+			if(j == 14 |j == 15 | j ==16){
 				img.attr('style','height:7vw');
 			}
 			if(j==10){

@@ -698,6 +698,13 @@ a:link, a:visited {
 	line-height: 40px;
 	text-align: left;
 }
+
+.agenda-section{
+	font-size: large;
+	font-weight: bold;
+	color: #F0B90B !important;
+}
+
 .vl{
 	display: inline-block;
 	vertical-align : middle;
@@ -803,6 +810,22 @@ td > .text-content-small{
 	height: 100%;
 	padding-top: 80%;
 	margin-bottom: 5%;
+}
+
+.remarks{
+	border-color: #2CA6E0;
+}
+
+.panel{
+	border-color: #FF56BB;
+}
+
+.an{
+	border-color: #F0B90B;
+}
+
+.key{
+	border-color: forestgreen;
 }
 
 #features_list{

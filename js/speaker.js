@@ -1,3 +1,5 @@
+
+
 // 計算在當前網頁中每行最多可以塞幾個speaker, for RWD，創造假的div來塞空間
 var speaker_list_width = $("#speaker_list").width();//after padding
 var speaker_item_width = $("#speaker_example").outerWidth();
@@ -24,7 +26,7 @@ function init_show(speaker_show_num){
 	    newDiv.appendTo("#speaker_list");
 	    newDiv.find('.text-content.name').html(speaker_info[0]);
 	    newDiv.find('.text-content.company').html(speaker_info[1]);
-	    newDiv.find('.speaker_bg').css("background-image", "url(img/speakers/$SPEAKER_NAME.png)".replace("$SPEAKER_NAME",speaker_info[0].replace(/ /g, '%20'))); 
+	    newDiv.find('.speaker_bg').css("background-image", "url(https://public.bnbstatic.com/static/binance-third-anniversary/img/speakers/$SPEAKER_NAME.png)".replace("$SPEAKER_NAME",speaker_info[0].replace(/ /g, '%20'))); 
 	    
 	    // newDiv.find('.text-content').html(speaker_info[1]+"<br>"+speaker_info[2]);
 	    // 若超過預設顯示的量，先不顯示
@@ -202,6 +204,7 @@ $("#view_more_speaker_btn2").click(function(){
 		
 	}
 });
+
 
 
 
